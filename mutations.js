@@ -1,3 +1,6 @@
+
+import { merge, filter, concat } from 'ramda';
+
 /* These should be shared with the srv */
 const mutations = {
   newElement: (state, {text, newId}) => ({

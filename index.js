@@ -1,10 +1,9 @@
 import { h, Component } from 'preact';
 import { Router } from 'preact-router';
 import createStore from 'mutastore'
-import { Provider, connect } from 'unistore/preact'
+import { Provider, connect } from 'mutastore/preact'
 
 import { map } from 'ramda';
-import { merge, filter, concat } from 'ramda';
 
 import sync from 'mutasync'
 
