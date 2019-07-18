@@ -14,8 +14,7 @@ let store = createStore(
 )
 
 const SYNC = sync({
-  host: 'http://localhost:2017',
-  app: '15ryxhs6rer634l73wvhh8'
+    host: 'http://some-endpoint'
 })
 
 store.subscribe(SYNC.apply)
