@@ -1,5 +1,4 @@
-import { h, Component } from 'preact';
-import { Router } from 'preact-router';
+import { Component, render } from 'preact';
 import createStore from 'mutastore'
 import { Provider, connect } from 'mutastore/preact'
 
@@ -57,7 +56,7 @@ const Login = connect(
 )(LoginBase)
 
 const PageBase = ({elements, elementsIds, add}) => <div
-  style="padding: 10px;"
+  style={{padding: "10px"}}
 >
   <Login />
   <br />
@@ -73,7 +72,7 @@ const PageBase = ({elements, elementsIds, add}) => <div
   <br />
   elements: 
   { map(
-      (id) => <div style="padding: 20px; border-bottom: solid 1px;">
+      (id) => <div style={{padding: "20px", "border-bottom": "solid 1px;"}}>
         {elements[id]}
       </div>,
       elementsIds
@@ -98,10 +97,15 @@ class App extends Component {
   )
 
   render = () => <div id="app">
+    <h1>Hello World</h1>
     <Provider store={store}>
       <Page />
     </Provider>
   </div>
 }
 
-export default App;
+render(
+  <App />,
+  root
+);
+
