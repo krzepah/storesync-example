@@ -35,7 +35,8 @@
     "preact-render-to-string": "^4.1.0",
     "preact-router": "^2.5.7",
     "ramda": "^0.26.1",
-    "mutastore": "0.0.2"
+    "mutastore": "0.0.2",
+    "stockroom": "git://github.com/krzepah/stockroom"
   },
   "jest": {
     "verbose": true,
